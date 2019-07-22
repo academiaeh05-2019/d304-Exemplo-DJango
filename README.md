@@ -25,9 +25,9 @@
  
  Adicione seu HTML a pasta templates do seu app, e então no seu arquivo de views, crie uma função que receba um parametro ```request``` e retorne o render do seu html que você adicionou (um exemplo dessa função pode ser encontrado dentro do app home dentro desse mesmo repositório)
 
- Agora, cadastre seu app dentro do DJango, para isso acesse o arquivo settings.py e dentro da sua chamada INSTALLED_APPS coloque o nome do seu app.
+ Agora, cadastre seu app dentro do DJango, para isso acesse o arquivo settings.py e dentro da sua chamada ```INSTALLED_APPS``` coloque o nome do seu app.
 
- Por último, só falta falarmos para o DJango qual é a URL que deve chamar nossa função dentro de view, para isso vá no arquivo urls.py do DJango e adicione um Path para sua view. (Obs: não esqueça de importar sua função antes de usar. Caso haja dúvidas em como fazer, um exemplo disso pode ser encontrado no app deste mesmo repositório)
+ Por último, só falta falarmos para o DJango qual é a URL que deve chamar nossa função dentro de view, para isso vá no arquivo ```urls.py``` do DJango e adicione um Path para sua view. (Obs: não esqueça de importar sua função antes de usar. Caso haja dúvidas em como fazer, um exemplo disso pode ser encontrado no app deste mesmo repositório)
 
 ### 4- Pronto ###
 Agora basta rodar seu servidor e você verá sua página HTML sendo exibida na url que você configurou :)

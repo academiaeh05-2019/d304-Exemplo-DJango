@@ -1,0 +1,7 @@
+1 - Criar um projeto django convertendo o projeto t102-comida
+
+2 - Criar um projeto DJango com 2 páginas
+    - Lista de noticias
+    - Lista de autores
+
+3 - Converter repositorio do git 205-memoria em projeto DJango

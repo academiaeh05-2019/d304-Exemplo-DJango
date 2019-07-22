@@ -3,5 +3,6 @@
 2 - Criar um projeto DJango com 2 páginas
     - Lista de noticias
     - Lista de autores
+    Obs: Crie um link em cada uma das páginas, que leve até as outra
 
 3 - Converter repositorio do git 205-memoria em projeto DJango

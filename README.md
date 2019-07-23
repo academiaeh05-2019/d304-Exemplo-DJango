@@ -3,7 +3,7 @@
 ## Como criar um ambiente para o DJango ##
  1. Crie uma pasta para o DJango
  2. Dentro da pasta, crie um ambiente com o comando ```python -m venv <pasta_do_ambiente>```
- 3. Ative o ambiente usando ```./<pasta_do_ambiente>/bin/activate```, se você estiver no windows use ```.\<pasta_do_ambiente>\Scripts\activate```
+ 3. Ative o ambiente usando ```. <pasta_do_ambiente>/bin/activate```, se você estiver no windows use ```.\<pasta_do_ambiente>\Scripts\activate```
 
 ## Como instalar DJango no seu ambiente ##
  DJango pode ser instalado em qualquer ambiente python usando ```pip install django```

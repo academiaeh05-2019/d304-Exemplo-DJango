@@ -21,7 +21,7 @@
  Para criar um app use ```./manage.py startapp <nome_do_aplicativo>```
 
 ### 3- Crie uma view para seu app ###
- DJango usa a arquitetura MTV, ou seja, Model, Template e View. Ou seja tudo referente a Objetos fica em Model, tudo refente a HTML e templates, fica na pasta templates, e o que é relacionado a regra de negócio fica na View.
+ DJango usa a arquitetura MTV, ou seja, Model, Template e View. Então tudo referente a Objetos fica em Model, tudo refente a HTML, fica na pasta templates, e o que é relacionado a regra de negócio fica na View.
  
  Adicione seu HTML a pasta templates do seu app, e então no seu arquivo de views, crie uma função que receba um parametro ```request``` e retorne o render do seu html que você adicionou (um exemplo dessa função pode ser encontrado dentro do app home dentro desse mesmo repositório)
 
@@ -33,6 +33,17 @@
 Agora basta rodar seu servidor e você verá sua página HTML sendo exibida na url que você configurou :)
 Para rodar seu servídor DJango use o comando ```./manage.py runserver```, e para parar, basta apertar Ctrl + C
 
-## Exercícios ##
+## Extra ##
+
+### Como colocar CSS, JS e imagens do projeto? ###
+Já que sabemos que somente o html pode ficar dentro de templates, surge uma dúvida, onde devemos colocar nossos outros arquivos do site?
+Resposta: Para isso devemos colocar nossos arquivos dentro de uma pasta chamada ```static``` que deve ser criada dentro do seu app. Ela será responsável por guardar esses tipos de arquivos.
+
+E como usamos esses arquivos no HTML?
+Para usar um arquivo estatico dentro do HTML, você precisa fazer duas coisas sendo elas:
+ 1. No começo do HTML escreva ```{% load static %}``` - Isso informa para o DJango que esse arquivo usará arquivos estaticos,
+ 2. Onde você precisar colocar o caminho do seu arquivo, coloque no lugar ```{% static "<nome_do_arquivo>"%}``` - Isso indica para o DJango que ali ele deve substituir esse texto pelo caminho real do arquivo. Obs: se o arquivo estiver dentro de uma pasta em static, coloque também a pasta junto com o nome do arquivo Ex: ```{% static "<pasta>/<nome_do_arquivo>"%}```
+
+ ## Exercícios ##
 Agora que você já está apto a utilizar o DJango, Realize os exercícios contidos dentro do arquivo ```Exercicios.html```.
 Não esqueça da diferença entre arquivos de template e arquivos que vão para o static como vimos em aula! :)
